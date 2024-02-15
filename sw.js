@@ -2,6 +2,6 @@ importScripts('https://cdnjs.cloudflare.com/ajax/libs/workbox-sw/7.0.0/workbox-s
 
 // Cache runtime requests
 workbox.routing.registerRoute(
-  new RegExp('/files/'),
+  new RegExp('./files/'),
   new workbox.strategies.CacheFirst()
 );
